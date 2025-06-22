@@ -1,5 +1,4 @@
 from google.adk.agents import LlmAgent
-from google.adk.runners import run_agent
 from google.adk.tools.agent_tool import AgentTool
 
 from agents.audience_agent import audience_agent
@@ -30,6 +29,6 @@ root_agent = LlmAgent(
 
 if __name__ == "__main__":
     product, tone = get_user_input()
-    result = run_agent(root_agent, {"input": product, "tone": tone})
+    result = clarix_agent.run({"input": product, "tone": tone}, invoke=True)
     print("\nGenerated Marketing Content:\n")
     print(result)
