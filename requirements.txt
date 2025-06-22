@@ -1,1 +1,5 @@
 python-dotenv
+python -m venv venv
+.\venv\Scripts\activate
+pip install adk-web
+adk web
