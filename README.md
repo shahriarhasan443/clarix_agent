@@ -35,6 +35,12 @@ clarix_agent/
 
 ---
 
+##Project architecture
+
+![Architecture](https://github.com/user-attachments/assets/26b4c1d8-f48f-482e-b14f-2268ff615718)
+
+
+
 ## ⚙️ Setup Instructions
 
 ### 1. Create and activate virtual environment
