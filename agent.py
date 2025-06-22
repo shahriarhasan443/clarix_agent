@@ -29,6 +29,6 @@ root_agent = LlmAgent(
 
 if __name__ == "__main__":
     product, tone = get_user_input()
-    result = clarix_agent.run({"input": product, "tone": tone}, invoke=True)
+    result = clarix_agent.invoke({"input": product, "tone": tone})
     print("\nGenerated Marketing Content:\n")
     print(result)
